@@ -1,0 +1,140 @@
+.block09 {
+    height: 600px;
+    position: relative;
+
+    .top {
+        top: -125px;
+        left: 0;
+        right: 0;
+        color: #fff;
+        z-index: 100;
+        height: 250px;
+        font-size: 32px;
+        line-height: 250px;
+        text-align: center;
+        position: absolute;
+        text-transform: uppercase;
+        background: url("../img/b09_bg-top.png") top center no-repeat;
+        font-family: $font-medium;
+    }
+
+    #map {
+        height: 599px;
+    }
+    .container {
+        height: 1px;
+        bottom: -1px;
+    }
+
+    .map-nav-block {
+        color: #fff;
+        right: 10px;
+        z-index: 200;
+        width: 353px;
+        height: 127px;
+        bottom:  230px;
+        position: absolute;
+        padding: 5px 45px 5px 5px;
+        background: url("../img/map-block-image.png") 0 0 no-repeat;
+
+        .map-nav-top {
+            height: 25px;
+            margin-left: 20px;
+            margin-bottom: 15px;
+
+            .map-nav-title {
+                float: left;
+                width: 115px;
+                height: 25px;
+                font-size: 24px;
+                line-height: 25px;
+                font-family: $font-bold;
+            }
+
+            .map-nav {
+                height: 25px;
+                width: 125px;
+                float: right;
+            }
+        }
+
+        .map-address {
+            height: 80px;
+            overflow: hidden;
+            padding-top: 12px;
+            padding-left: 20px;
+            font-size: 13px;
+        }
+
+        .address-nav {
+            top: 3px;
+            z-index: 300;
+            min-height: 25px;
+            position: relative;
+
+            ul {
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 500;
+                padding: 2px 0;
+                overflow: hidden;
+                position: absolute;
+                background: #fff url("../img/down.png") 106px 9px no-repeat;
+                @include border-radius(14px);
+
+                li {
+                    margin: 0;
+                    display: none;
+
+                    a {
+                        color: #022d00;
+                        display: block;
+                        font-size: 16px;
+                        padding: 1px 8px;
+                        text-align: left;
+                        line-height: 19px;
+                        text-decoration: none;
+
+                        &:hover {
+                            background-color: #c9fdc6;
+                        }
+                    }
+
+                    &:first-child a:hover {
+                        background-color: transparent;
+                    }
+
+                    &.ui-tabs-active {
+                        display: block;
+
+                        a {
+                            color: #022d00;
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    li {
+                        display: block;
+
+                        &.current {
+                            background-image: none;
+                        }
+                    }
+                }
+            }
+
+            .adr {
+                top: 50px;
+                left: -160px;
+                width: 280px;
+                height: 55px;
+                font-size: 13px;
+                line-height: 18px;
+                position: absolute;
+            }
+        }
+    }
+}

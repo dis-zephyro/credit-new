@@ -1,0 +1,28 @@
+.block01 {
+    height: 690px;
+    padding-top: 100px;
+    background: url("../img/b01_bg.jpg") 50% 0 no-repeat;
+
+    h1 {
+        color: #fff;
+        margin-bottom: 55px;
+        text-align: center;
+        text-transform: uppercase;
+
+        strong {
+            color: $color-green;
+        }
+
+        span {
+            color: #08ea00;
+            display: block;
+            font-size: 32px;
+            line-height: 50px;
+            font-family: $font-light;
+        }
+    }
+
+    .form-block {
+        background: url("../img/pattern.png");
+    }
+}

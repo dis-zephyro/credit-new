@@ -1,0 +1,49 @@
+.block08 {
+    height: 960px;
+    position: relative;
+    background: url("../img/b7_bg.jpg") top center no-repeat;
+
+    .container {
+        z-index: 500;
+    }
+
+    .top {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        height: 116px;
+        position: absolute;
+        background: url("../img/bg9_top.png") top center no-repeat;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 32px;
+        padding-top: 200px;
+        margin-bottom: 120px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .form-block {
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .inner {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+
+        .video-inner {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+    }
+}

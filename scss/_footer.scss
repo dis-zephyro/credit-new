@@ -1,0 +1,52 @@
+.footer {
+    height: 125px;
+
+    .footer-tel {
+        top: 20px;
+        right: 0;
+        width: 550px;
+        height: 45px;
+        position: absolute;
+
+        .footer-phone {
+            float: left;
+            width: 310px;
+            font-size: 38px;
+            line-height: 40px;
+            position: relative;
+            color: $color-green;
+            font-family: $font-medium;
+
+            span {
+                left: 3px;
+                top: 40px;
+                display: block;
+                font-size: 20px;
+                line-height: 20px;
+                position: absolute;
+                font-family: $font-light;
+            }
+        }
+
+        .btn-green {
+            float: right;
+            display: block;
+        }
+    }
+
+    .contact  {
+        top: 20px;
+        left: 20px;
+        width: 310px;
+        font-size: 16px;
+        position: absolute;
+    }
+
+    .copy {
+        left: 330px;
+        bottom: 8px;
+        font-size: 14px;
+        line-height: 14px;
+        position: absolute;
+    }
+}

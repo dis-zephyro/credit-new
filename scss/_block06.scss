@@ -1,0 +1,54 @@
+.block06 {
+    color: #fff;
+    height: 836px;
+    padding-top: 20px;
+    background: url("../img/b06_bg.jpg") top center no-repeat;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .banks {
+
+        .col {
+            margin: 0;
+            width: 50%;
+            float: left;
+            padding: 0 60px;
+            list-style: none;
+
+            li {
+                height: 94px;
+                overflow: hidden;
+                position: relative;
+                margin-bottom: 20px;
+
+                .bank-logo {
+                    float: left;
+                    width: 94px;
+                    height: 94px;
+                    overflow: hidden;
+                    margin-right: 25px;
+                    @include border-radius(8px);
+                }
+
+                .bank-name {
+                    color: #fff;
+                    display: block;
+                    font-size: 24px;
+                    padding-top: 5px;
+                    margin-bottom: 5px;
+                    font-family: $font-bold;
+                }
+
+                .bank-result {
+                    color: #ffea00;
+                    display: block;
+                    font-size: 18px;
+                    font-family: $font-bold;
+                }
+            }
+        }
+    }
+}

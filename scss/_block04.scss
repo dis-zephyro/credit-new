@@ -1,0 +1,46 @@
+.block04 {
+    height: 485px;
+    padding-top: 20px;
+    background: url("../img/b04_bg.jpg") top center no-repeat;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            width: 20%;
+            float: left;
+            color: #494949;
+            font-size: 16px;
+            text-align: center;
+            font-family: $font-light;
+            padding: 105px 10px 0 10px;
+
+            &.item1 {
+                background: url("../img/b04_item1.png") top center no-repeat;
+            }
+
+            &.item2 {
+                background: url("../img/b04_item2.png") top center no-repeat;
+            }
+
+            &.item3 {
+                background: url("../img/b04_item3.png") top center no-repeat;
+            }
+
+            &.item4 {
+                background: url("../img/b04_item4.png") top center no-repeat;
+            }
+
+            &.item5 {
+                background: url("../img/b04_item5.png") top center no-repeat;
+            }
+        }
+    }
+}

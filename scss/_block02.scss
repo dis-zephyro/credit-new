@@ -1,0 +1,154 @@
+.block02 {
+    height: 890px;
+    background: url("../img/b02_bg.jpg") 50% 0 no-repeat;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .trap {
+        margin:  0;
+        padding: 0;
+        height: 630px;
+        list-style: none;
+        position: relative;
+
+        li {
+            width: 310px;
+            height: 90px;
+            position: absolute;
+
+            p {
+                color: #494949;
+                font-size: 24px;
+                line-height: 24px;
+                margin-bottom: 3px;
+                font-family: $font-bold;
+            }
+
+            .detail-link {
+                color: #058000;
+                cursor: pointer;
+                text-decoration: none;
+                font-family: $font-light;
+
+                &:hover {
+                    border-bottom: 1px dotted #058000;
+                }
+            }
+
+            .detail {
+                top: 100px;
+                z-index: 10;
+                width: 500px;
+                display: none;
+                font-size: 13px;
+                text-align: left;
+                padding: 20px 30px;
+                position: absolute;
+                background: #ffffff;
+                border: 1px solid #E6E6E6;
+                @include border-radius(6px);
+                @include box-shadow(0 0 21px rgba(0, 0, 0, 0.11));
+
+                &:before {
+                    top: -19px;
+                    z-index: 50;
+                    margin-left: -1px;
+                    border-left: 27px solid #E6E6E6;
+                }
+
+                &:after {
+                    content: '';
+                    z-index: 50;
+                    top: -18px;
+                    position: absolute;
+                    border-left: 26px solid #ffffff;
+                    border-top: 18px solid transparent;
+                }
+
+                .icon-close {
+                    top: 8px;
+                    right: 8px;
+                    width: 14px;
+                    height: 14px;
+                    border: none;
+                    cursor: pointer;
+                    position: absolute;
+                    display: inline-block;
+                    background: transparent url("../img/icon-close.png") center no-repeat;
+                }
+            }
+
+            &.item1 .detail,
+            &.item2 .detail,
+            &.item3 .detail {
+                left: 10px;
+
+                &:after {
+                    left: 150px;
+                }
+            }
+
+            &.item4 .detail,
+            &.item5 .detail,
+            &.item6 .detail {
+                right: 10px;
+
+                &:after {
+                    left: 350px;
+                }
+            }
+
+            &.item1 {
+                top: 10px;
+                left: 60px;
+                text-align: right;
+                padding-right: 90px;
+                background: url("../img/b02_item1.png") right top no-repeat;
+            }
+
+            &.item2 {
+                left: 0;
+                top: 210px;
+                text-align: right;
+                padding-right: 90px;
+                background: url("../img/b02_item2.png") right top no-repeat;
+            }
+
+            &.item3 {
+                left: 60px;
+                top: 450px;
+                text-align: right;
+                padding-right: 90px;
+                background: url("../img/b02_item3.png") right top no-repeat;
+            }
+
+            &.item4 {
+                top: 10px;
+                right: 60px;
+                text-align: left;
+                padding-left: 90px;
+                background: url("../img/b02_item4.png") left top no-repeat;
+            }
+
+            &.item5 {
+                top: 210px;
+                right: 0;
+                text-align: left;
+                padding-left: 90px;
+                background: url("../img/b02_item5.png") left top no-repeat;
+            }
+
+            &.item6 {
+                top: 450px;
+                right: 60px;
+                text-align: left;
+                padding-left: 90px;
+                background: url("../img/b02_item6.png") left top no-repeat;
+            }
+
+        }
+    }
+}

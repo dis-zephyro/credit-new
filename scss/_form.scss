@@ -1,0 +1,301 @@
+// Формы и кнопки
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 9px 40px;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: $color-green;
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-light;
+    border: 1px solid $color-green;
+    @include border-radius(8px);
+
+    &:hover {
+        color: #494949;
+        text-decoration: none;
+        border-color: #494949;
+    }
+
+    &:active {
+        top: 0;
+        position: relative;
+        @include box-shadow(inset 0px 1px 3px 0px rgba(0, 0, 0, 0.31));
+    }
+
+    &.white {
+        color: #fff;
+        border-color: #fff;
+
+        &:hover {
+            color: #f9f9f9;
+            border-color: #f9f9f9;
+        }
+    }
+
+    &.btn-red {
+        color: #fff;
+        padding: 19px 40px;
+        border-color: #ff0404;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0404+0,b00000+100 */
+        background: #ff0404; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ff0404 0%, #b00000 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0404), color-stop(100%,#b00000)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ff0404 0%,#b00000 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ff0404 0%,#b00000 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ff0404 0%,#b00000 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ff0404 0%,#b00000 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0404', endColorstr='#b00000',GradientType=0 ); /* IE6-9 */
+
+        &:hover {
+            background: #b00000;
+            border-color: #ff0404;
+        }
+    }
+
+
+    &.btn-green-transparent {
+        font-size: 18px;
+        padding: 19px 43px;
+        font-family: $font-bold;
+        border: 2px solid $color-green;
+
+        &:hover {
+            color: #fff;
+            border-color: $color-green;
+            background-color: $color-green;
+        }
+    }
+}
+
+
+.btn-green-large {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    outline: none;
+    display: table;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 40px;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    font-family: $font-bold;
+    border: 1px solid $color-green;
+    @include border-radius(6px);
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#057e00+0,035d00+100 */
+    background: #057e00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #057e00 0%, #035d00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#057e00), color-stop(100%,#035d00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #057e00 0%,#035d00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #057e00 0%,#035d00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #057e00 0%,#035d00 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #057e00 0%,#035d00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#057e00', endColorstr='#035d00',GradientType=0 ); /* IE6-9 */
+
+    span {
+        width: 100%;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        background: #057e00;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: #fff;
+    }
+
+    &:active {
+        top: 1px;
+        color: #fff;
+    }
+
+}
+
+.btn-green,
+.sendbutton {
+    top: -1px;
+    color: #fff;
+    width: 225px;
+    height: 44px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-light;
+    padding: 6px 10px 8px 10px;
+    background: url("../img/btn-green-bg.png") 0 0 no-repeat;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active {
+        top: 0;
+        position: relative;
+    }
+}
+
+
+.form-block {
+    width: 370px;
+    z-index: 300;
+    margin: 0 auto;
+    padding: 30px 40px;
+    position: relative;
+    border: 1px solid #ffffff;
+    @include border-radius(8px);
+    background: rgba(118, 118, 118, .6);
+
+    .form-title {
+        color: #fff;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        font-family: $font-bold;
+        margin: 0 -5px 18px -5px;
+
+        span {
+            color: $color-green;
+        }
+    }
+}
+
+.cform {
+
+    ol {
+        margin: 0;
+        padding: 0 0 2px 0;
+        list-style: none;
+    }
+
+    li {
+        position: relative;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: none;
+    }
+
+    input[type="text"] {
+        margin: 0;
+        color: #fff;
+        width: 100%;
+        height: 40px;
+        outline: none;
+        display: block;
+        overflow: hidden;
+        font-size: 16px;
+        text-align: left;
+        line-height: 20px;
+        padding: 9px 12px;
+        border: 1px solid #a6a5a4;
+        background: rgba(98, 97, 96, .7);
+        @include border-radius(6px);
+
+        &:focus {
+            border-color: $color-green;
+            background: rgba(145, 145, 145, .7);
+        }
+    }
+
+    .radio {
+
+        label {
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            line-height: 20px;
+            position: relative;
+            padding-left: 25px;
+            margin-right: 15px;
+            display: inline-block;
+
+            &:before {
+                left: 0;
+                bottom: 1px;
+                content: "";
+                width: 17px;
+                height: 17px;
+                padding-top: 1px;
+                padding-left: 1px;
+                margin-right: 10px;
+                position: absolute;
+                display: inline-block;
+                background: url("../img/checkbox.png") 0 0 no-repeat;
+            }
+        }
+
+        input[type=radio] {
+            display: none;
+        }
+
+        input[type=radio]:checked + label:before {
+            background: url("../img/checkbox.png") 0 -33px no-repeat;
+        }
+
+    }
+
+    .checkbox {
+
+        input[type=checkbox] {
+            display: none;
+        }
+
+        label {
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            line-height: 20px;
+            position: relative;
+            padding-left: 25px;
+            margin-right: 15px;
+            display: inline-block;
+
+            &:before {
+                left: 0;
+                bottom: 1px;
+                content: "";
+                width: 17px;
+                height: 17px;
+                padding-left: 1px;
+                padding-top: 1px;
+                margin-right: 10px;
+                position: absolute;
+                display: inline-block;
+                background: url("../img/checkbox.png") 0 0 no-repeat;
+            }
+        }
+
+
+        input[type=checkbox]:checked + label:before {
+            background: url("../img/checkbox.png") 0 -33px no-repeat;
+        }
+
+
+    }
+
+    p {
+        margin-bottom: 3px;
+        text-align: center;
+    }
+}

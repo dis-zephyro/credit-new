@@ -1,0 +1,91 @@
+header {
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    position: fixed;
+    height: 103px;
+    background: #fff url("../img/b2_bg.png") top center;
+
+    .header-logo {
+        top: 0;
+        right: -60px;
+        z-index: 999;
+        width: 439px;
+        height: 117px;
+        cursor: pointer;
+        position: absolute;
+        background: url("../img/logo.png") 0 0 no-repeat;
+    }
+
+    .header-contact {
+        top: 18px;
+        left: 0;
+        width: 550px;
+        height: 45px;
+        overflow: hidden;
+        position: absolute;
+
+        .header-phone {
+            float: left;
+            width: 310px;
+            font-size: 38px;
+            line-height: 40px;
+            color: $color-green;
+            font-family: $font-medium;
+        }
+
+        .btn-green {
+            float: right;
+            display: block;
+        }
+    }
+}
+
+
+.topnav {
+
+    top:72px;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+    li {
+        float: left;
+        width: 233px;
+        font-size: 20px;
+        text-align: center;
+        background: url("../img/topnav-divider.png") 100% 1px no-repeat;
+
+        a {
+            color: #494949;
+            text-decoration: none;
+
+            :hover {
+                border-bottom: 1px solid #8c8c8c;
+            }
+        }
+
+        &:first-child {
+            width: 132px;
+            text-align: left !important;
+        }
+
+        &:last-child {
+            width: 176px;
+            text-align: right !important;
+            background-image: none;
+        }
+
+        &.active {
+            a {
+                color: #068600;
+                border-bottom: 2px solid #068600;
+
+                &:hover {
+                    border-bottom: 2px solid #068600;
+                }
+            }
+        }
+    }
+}

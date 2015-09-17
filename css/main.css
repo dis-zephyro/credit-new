@@ -572,11 +572,15 @@ ol {
   background: url("../img/btn-green-bg.png") 0 0 no-repeat; }
   .btn-green:hover,
   .sendbutton:hover {
+    color: #fff;
     text-decoration: none; }
   .btn-green:active,
   .sendbutton:active {
     top: 0;
     position: relative; }
+  .btn-green:visited,
+  .sendbutton:visited {
+    color: #fff; }
 
 .form-block {
   width: 370px;
@@ -710,14 +714,14 @@ header {
     overflow: hidden;
     position: absolute; }
     header .header-contact .header-phone {
-      float: left;
+      float: right;
       width: 310px;
       font-size: 38px;
       line-height: 40px;
       color: #058200;
       font-family: "HelveticaNeueCyr-Medium"; }
     header .header-contact .btn-green {
-      float: right;
+      float: left;
       display: block; }
 
 .topnav {
